@@ -5,43 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variant 7. Card</title>
+    <link rel="stylesheet" href="../style/card.css">
+    <style>
+        .header-logo-section {
+            font-family: Georgia, "Times New Roman";
+            min-width: 20vw;
+            display: flex;
+            gap: 10px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .header-title {
+            font-size: 3rem;
+        }
+
+        .header-title--span {
+            font-size: 2rem;
+            color: var(--span-color);
+        }
+
+        .header-text {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .header-nav--list {
+            min-width: 40vw;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .header-nav--list__element {
+            color: var(----black);
+            text-decoration: none;
+        }
+
+        .footer--title {
+            font-size: 2rem;
+        }
+
+        .footer--text {
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>T<span style="font-size: large; color: rgb(1, 114, 7);">T</span>T</h1>
-        <p>Tales Through Time</p>
-        <img src="../imgs/logo2.png" alt="Our logo" width="50px" height="45px">
-        <nav>
-            <ul>
-                <li><a href="#explore-history">What is the platform for</a></li>
-                <li><a href="#our-offer">What we can offer</a></li>
-                <li><a href="#why-us">What makes us unique?</a></li>
-                <li><a href="#main-article">Exploring History Through Cinema: A Unique Cinematic Journey</a></li>
+    <header class="header">
+        <div class="header-logo-section">
+            <img class="header-logo" src="../imgs/logo.png" alt="Our logo" width="50px" height="45px">
+            <h1 class="header-title">T<span class="header-title--span">T</span>T</h1>
+            <p class="header-text">Tales Through Time</p>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-nav--list">
+                <li><a class="header-nav--list__element" href="#explore-history">Platform</a></li>
+                <li><a class="header-nav--list__element" href="#our-offer">Offer</a></li>
+                <li><a class="header-nav--list__element" href="#why-us">Unique</a></li>
+                <li><a class="header-nav--list__element" href="#main-article">US</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="explore-history">
-            <h2>About the Films: Explore History With Us</h2>
-            <p>Our platform is your gateway to historical films. Each movie comes with additional content,
+        <section class="main-text-section" id="explore-history">
+            <h2 class="main-text-section--title">About the Films: Explore History With Us</h2>
+            <p class="main-text-section--text">Our platform is your gateway to historical films. Each movie comes with
+                additional content,
                 enabling you to immerse yourself in the stories behind the scenes. Explore history with us and
                 experience the past in a whole new way.</p>
         </section>
 
-        <section id="#our-offer">
-            <h2>What we can offer</h2>
-            <p>Welcome to our cinematic hub! Here, you can create an account and explore films based on various criteria
+        <section class="main-text-section" id="our-offer">
+            <h2 class="main-text-section--title">What we can offer</h2>
+            <p class="main-text-section--text">Welcome to our cinematic hub! Here, you can create an account and explore
+                films based on various criteria
                 such as release year or actors. Our system also suggests movies tailored to your preferences and viewing
                 history. Dive into detailed film information, including historical context, explore key historical
                 figures, and delve deeper into the film's themes. Additionally, you have the ability to search by film
                 title and access analytics on platform usage.</p>
         </section>
 
-        <section id="why-us">
-            <h2>What makes us unique?</h2>
-            <p>Our platform is a dedicated effort to make history accessible to everyone. <em>We created this system
+        <section class="main-text-section" id="why-us">
+            <h2 class="main-text-section--title">What makes us unique?</h2>
+            <p class="main-text-section--text">Our platform is a dedicated effort to make history accessible to
+                everyone. <em>We created this system
                     with
                     one purpose – to provide history enthusiasts the opportunity to immerse themselves in the world of
                     historical events through captivating films.</em> It's important to us that every user can find
@@ -49,9 +99,10 @@
                 that captures their heart and expands their knowledge of the past.</p>
         </section>
 
-        <article id="main-article">
-            <h2>Exploring History Through Cinema: A Unifying Cinematic Journey</h2>
-            <p><b> In the realm of historical events, there exists a unique gateway that allows enthusiasts to immerse
+        <article class="main-text-section" id="main-article">
+            <h2 class="main-text-section--title">Exploring History Through Cinema: A Unifying Cinematic Journey</h2>
+            <p class="main-text-section--text"><b> In the realm of historical events, there exists a unique gateway that
+                    allows enthusiasts to immerse
                     themselves in the past: our cinematic hub. Here at our platform, we offer much more than just
                     movies; we
                     provide experience that combines entertainment with education.</b>
@@ -63,119 +114,149 @@
                 you're a history teacher looking for engaging materials for your classroom or an individual passionate
                 about expanding your knowledge, our platform offers a treasure trove of historical information.
             </p>
-            <ol type="I">
-                <li>Unveiling the Stories Behind the Scenes</li>
-                <li>Tailored Recommendations and Personalized Viewing</li>
-                <li>An Educational Adventure</li>
-                <li>Making History Accessible</li>
+            <ol class="main-text-section--list" type="I">
+                <li class="main-text-section--list__element">Unveiling the Stories Behind the Scenes</li>
+                <li class="main-text-section--list__element">Tailored Recommendations and Personalized Viewing</li>
+                <li class="main-text-section--list__element">An Educational Adventure</li>
+                <li class="main-text-section--list__element">Making History Accessible</li>
             </ol>
         </article>
 
         <aside>
-            <h2>Additional Information</h2>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbTrnN7OvK6Mo8-IffDMrFavJHH4rP5PKkyg&usqp=CAU"
+            <h2 class="aside-title">Additional Information</h2>
+            <img class="aside-image"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbTrnN7OvK6Mo8-IffDMrFavJHH4rP5PKkyg&usqp=CAU"
                 width="50%">
-            <p>Deepen your understanding of history with our exclusive documentaries and interviews with prominent
+            <p class="aside-text">Deepen your understanding of history with our exclusive documentaries and interviews
+                with prominent
                 historical figures</p>
         </aside>
 
-        <table style="border: 1px solid seagreen; margin-bottom: 20px;">
-            <caption>The most famous historical films of 2023</caption>
+        <table class="main-table">
+            <caption class="main-table--caption">The most famous historical films of 2023</caption>
             <thead>
-                <tr>
-                    <th>Movie Title</th>
-                    <th>Genre</th>
-                    <th>Director</th>
-                    <th>Main Actors</th>
+                <tr class="main-table--tr">
+                    <th class="main-table--th">Movie Title</th>
+                    <th class="main-table--th">Genre</th>
+                    <th class="main-table--th" colspan="2">People</th>
+                    <th class="main-table--th"></th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Oppenheimer</td>
-                    <td>Biography, Drama</td>
-                    <td>Christopher Nolan</td>
-                    <td> Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr.</td>
-                    <td><a href="https://www.imdb.com/title/tt15398776/">IMDb</a></td>
+                <tr class="main-table--tr">
+                    <td class="main-table--td">Oppenheimer</td>
+                    <td class="main-table--td">Biography, Drama</td>
+                    <td class="main-table--td">Christopher Nolan</td>
+                    <td class="main-table--td"> Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr.</td>
+                    <td class="main-table--td"><a href="https://www.imdb.com/title/tt15398776/">IMDb</a></td>
                 </tr>
-                <tr>
-                    <td>Killers of the Flower Moon</td>
-                    <td>Crime, Drama</td>
-                    <td>Martin Scorsese</td>
-                    <td>Leonardo DiCaprio, Robert De Niro, Lily Gladstone, Jesse Plemons</td>
-                    <td><a href="https://www.imdb.com/title/tt5537002/">IMDb</a></td>
+                <tr class="main-table--tr">
+                    <td class="main-table--td">Killers of the Flower Moon</td>
+                    <td class="main-table--td">Crime, Drama</td>
+                    <td class="main-table--td">Martin Scorsese</td>
+                    <td class="main-table--td">Leonardo DiCaprio, Robert De Niro, Lily Gladstone, Jesse Plemons</td>
+                    <td class="main-table--td"><a href="https://www.imdb.com/title/tt5537002/">IMDb</a></td>
                 </tr>
-                <tr>
-                    <td>El Conde</td>
-                    <td>Comedy, Fantasy</td>
-                    <td>Pablo Larraín</td>
-                    <td>Jaime Vadell, Gloria Münchmeyer, Alfredo Castro, Paula Luchsinger</td>
-                    <td><a href="https://www.imdb.com/title/tt21113540/">IMDb</a></td>
+                <tr class="main-table--tr">
+                    <td class="main-table--td">El Conde</td>
+                    <td class="main-table--td">Comedy, Fantasy</td>
+                    <td class="main-table--td">Pablo Larraín</td>
+                    <td class="main-table--td">Jaime Vadell, Gloria Münchmeyer, Alfredo Castro, Paula Luchsinger</td>
+                    <td class="main-table--td"><a href="https://www.imdb.com/title/tt21113540/">IMDb</a></td>
                 </tr>
-                <tr>
-                    <td>Babylon</td>
-                    <td>Comedy, Drama</td>
-                    <td>Damien Chazelle</td>
-                    <td>Brad Pitt, Margot Robbie, Jean Smart, Olivia Wilde</td>
-                    <td><a href="https://www.imdb.com/title/tt10640346/">IMDb</a></td>
+                <tr class="main-table--tr">
+                    <td class="main-table--td">Babylon</td>
+                    <td class="main-table--td">Comedy, Drama</td>
+                    <td class="main-table--td">Damien Chazelle</td>
+                    <td class="main-table--td">Brad Pitt, Margot Robbie, Jean Smart, Olivia Wilde</td>
+                    <td class="main-table--td"><a href="https://www.imdb.com/title/tt10640346/">IMDb</a></td>
                 </tr>
-                <tr>
-                    <td>Jeanne du Barry</td>
-                    <td>Biography, Drama</td>
-                    <td>Maïwenn</td>
-                    <td> Maïwenn, Johnny Depp, Benjamin Lavernhe, Melvil Poupaud</td>
-                    <td><a href="https://www.imdb.com/title/tt17277414/">IMDb</a></td>
+                <tr class="main-table--tr">
+                    <td class="main-table--td">Jeanne du Barry</td>
+                    <td class="main-table--td">Biography, Drama</td>
+                    <td class="main-table--td">Maïwenn</td>
+                    <td class="main-table--td"> Maïwenn, Johnny Depp, Benjamin Lavernhe, Melvil Poupaud</td>
+                    <td class="main-table--td"><a href="https://www.imdb.com/title/tt17277414/">IMDb</a></td>
                 </tr>
-                <tr>
-                    <td>Napoleon</td>
-                    <td>Action, Adventure, Biography</td>
-                    <td>Ridley Scott</td>
-                    <td> Vanessa Kirby, Joaquin Phoenix, Rupert Everett, Ben Miles</td>
-                    <td><a href="https://www.imdb.com/title/tt13287846/">IMDb</a></td>
+                <tr class="main-table--tr">
+                    <td class="main-table--td">Napoleon</td>
+                    <td class="main-table--td">Action, Adventure, Biography</td>
+                    <td class="main-table--td">Ridley Scott</td>
+                    <td class="main-table--td"> Vanessa Kirby, Joaquin Phoenix, Rupert Everett, Ben Miles</td>
+                    <td class="main-table--td"><a href="https://www.imdb.com/title/tt13287846/">IMDb</a></td>
                 </tr>
             </tbody>
             <tfoot>
-                <tr>
-                    <td colspan="5">A list of historical films for your viewing pleasure.</td>
+                <tr class="main-table--tr">
+                    <td class="main-table--td" colspan="5">A list of historical films for your viewing pleasure.</td>
                 </tr>
             </tfoot>
         </table>
 
-        <form style="border: 1px solid blueviolet;">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+        <section class="form--section">
+            <h2 class="form--section--title">Feedback</h2>
+            <form>
+                <div class="input-section">
+                    <label class="input-section__label" for="email">Email:</label>
+                    <input class="input-section__input" type="email" id="email" name="email" required>
+                </div>
+                <div class="input-section">
+                    <label class="input-section__label" for="age">Age:</label>
+                    <input class="input-section__input" type="number" id="age" name="age" min="0" max="100" required>
+                </div>
+                <div class="input-section">
+                    <label class="input-section__label" for="date">Date:</label>
+                    <input class="input-section__input" type="date" id="date" name="date" required>
+                </div>
+                <div class="input-section">
+                    <label class="input-section__label" for="message">Message:</label>
+                    <textarea class="input-section__textarea" id="message" name="message" rows="4" cols="50"
+                        required></textarea>
+                </div>
+                <div class="input-section">
+                    <label class="input-section__label" for="education">Education:</label>
+                    <select class="input-section--select" id="education" name="education">
+                        <option value="engineering">Engineering</option>
+                        <option value="pedagogical">Pedagogical</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="input-section">
+                    <label class="input-section__label" for="rating">Quality of the material:</label>
+                    <label class="input-section__label" for="liked">
+                        <input class="input-section__radio" type="radio" id="liked" name="rating" value="liked">Liked
+                    </label>
 
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="0" max="100" required><br>
+                    <label class="input-section__label" for="needs_revision">
+                        <input class="input-section__radio" type="radio" id="needs_revision" name="rating"
+                            value="needs_revision">Needs revision
+                    </label>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-
-            <label for="education">Education:</label>
-            <select id="education" name="education">
-                <option value="engineering">Engineering</option>
-                <option value="pedagogical">Pedagogical</option>
-            </select><br>
-
-            <label for="rating">Quality of the material:</label><br>
-            <input type="radio" id="liked" name="rating" value="liked">Liked<br>
-            <input type="radio" id="needs_revision" name="rating" value="needs_revision">Needs revision<br>
-            <input type="radio" id="incomplete" name="rating" value="incomplete">Incomplete<br>
-
-            <input type="checkbox" id="consent" name="consent" required>
-            <label for="consent">I consent to the processing of my personal data.</label><br>
-
-            <button type="submit">Submit</button>
-        </form>
+                    <label class="input-section__label" for="incomplete">
+                        <input type="radio" id="incomplete" name="rating" value="incomplete">Incomplete
+                    </label>
+                </div>
+                <div class="input-section">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label class="input-section__label" for="consent">I consent to the processing of my personal
+                        data.</label><br>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn5SInYt7EqLvSH6MR_5qHlgjjIXHmZRWlNQ&usqp=CAU"
+        <img class="footer--img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn5SInYt7EqLvSH6MR_5qHlgjjIXHmZRWlNQ&usqp=CAU"
             alt="history documentaries films">
-        <h3>Contact Information:</h3>
-        <address>
-            Email: <a href="mailto:example@example.com">gfibfidb7nfjfv@gmail.com</a><br>
-            Phone: 542-864-2737
-        </address>
+        <div class="footer--text">
+            <h3 class="footer--title">Contact Information:</h3>
+
+            <p class="footer--text">Email: gfibfidb7nfjfv@gmail.com </p>
+            <p class="footer--text">Phone: 542-864-2737</p>
+
+        </div>
     </footer>
 </body>
 

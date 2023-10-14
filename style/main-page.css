@@ -12,6 +12,7 @@
     --white: #ffffff;
     --text-color: #c3dbd1;
     --text-color-dark: #111111;
+    --placeholder-color: #111111b4;
 }
 
 * {
@@ -79,6 +80,11 @@ input[type="search"] {
     background-size: 15px;
     margin: 0px;
     padding: 12px 5px 12px 30px;
+}
+
+input[type="search"]::placeholder {
+    color: var(--placeholder-color);
+    opacity: 1; /* Firefox */
 }
 
 .login-section__login-img:hover {

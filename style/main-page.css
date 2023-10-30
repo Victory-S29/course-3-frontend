@@ -166,6 +166,19 @@ input[type="radio"] {
     align-items: center;
     text-decoration: none;
 }
+.menu {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    right: 20px;
+}
+.menu button {
+    background-color: var( --primary-background);
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+}
 .film-element--img {
     width: 80%;
     height: 80%;
